@@ -1,10 +1,16 @@
 /*jslint vars: true, plusplus: true, devel: true, moz: true, nomen: true, regexp: true, indent: 4, maxerr: 50 */
 /*global $, window, location, CSInterface, SystemPath, themeManager*/
+var fs = require('fs');
+var http = require('http');
+var path = require('path');
 
 (function () {
     'use strict';
 
+
     var csInterface = new CSInterface();
+
+
 
 
     function init() {
@@ -21,13 +27,14 @@
           csInterface.evalScript('doIOS7()');
 
         });
-        
+
         $(function() {
           $("#accordion").accordion();
         });
 
 
     }
+    console.log(process.platform);
 
     init();
 

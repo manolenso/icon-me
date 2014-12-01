@@ -6,35 +6,282 @@
 <link rel="stylesheet" href="css/topcoat-desktop-dark.min.css"/>
 <link  id="hostStyle" rel="stylesheet" href="css/styles.css"/>
 
+
 <title>Icon Me!</title>
+<script type="text/javascript">window.module = undefined</script>
+<script src="js/libs/jquery-ui.min.js"></script>
+
+
 </head>
 
 <body class="hostElt">
 
     <div id="content">
 
-        <button id="doAndroid" class="topcoat-button--large hostFontSize">Create Android Icons</button><br><br>
-        <!-- Android -->
-        <button id="doBlackberry" class="topcoat-button--large hostFontSize">Create Blackberry Icons</button><br><br>
-        <!-- Blackberry -->
+        <button id="doAndroid" class="topcoat-button--large hostFontSize">Create Android Icons</button><br>
+        <a href="http://www.creativefreedom.co.uk/icon-designers-blog/android-4-1-icon-size-guide-made-simple/">guidelines</a><br>
+        <!-- Android launcher
+        <a href="http://www.creativefreedom.co.uk/icon-designers-blog/android-4-1-icon-size-guide-made-simple/">guidelines</a>
+        -----------------------------
+        mdpi 160 dpi	1×
+        hdpi:	240 dpi	1.5×
+        xhdpi:	320 dpi	2×
+        xxhdpi:	490 dpi	3×
+        xxxhdpi:	640 dpi	4×
+        Action bar, Dialog & Tab icons
+        ------------------------------
+        24 × 24 area in 32 × 32 (mdpi)
+        36 × 36 area in 48 × 48 (hdpi)
+        48 × 48 area in 64 × 64 (xhdpi)
+        72 × 72 area in 96 × 96 (xxhdpi)
+        96 × 96 area in 128 × 128 (xxxhdpi)
+        -----------------------------------
+        Small Contextual Icons
+        16 × 16 (mdpi)
+        24 × 24 (hdpi)
+        32 × 32 (xhdpi)
+        48 × 48 (xxhdpi)
+        64 × 64 (xxxhdpi)
+        ----------------------------------
+        Notification icons
+        22 × 22 area in 24 × 24 (mdpi)
+        33 × 33 area in 36 × 36 (hdpi)
+        44 × 44 area in 48 × 48 (xhdpi)
+        66 × 66 area in 72 × 72 (xxhdpi)
+        88 × 88 area in 96 × 96 (xxxhdpi)
+        -->
+        <button id="doBlackberry" class="topcoat-button--large hostFontSize">Create Blackberry Icons</button><br>
+        <a href="http://developer.blackberry.com/design/bb10/application_icons.html">guidelines</a><br>
+        <!-- Blackberry
+        Application icons Guidelines <a href="http://developer.blackberry.com/design/bb10/application_icons.html"></a>
+        114 × 114	.png	For devices with a screen resolution of 720 x 720px or 768 x 1280px
+        94 × 94	.png	For devices with a screen resolution of 720 x 1280px
+        -------------------------------------------------------------------------------
+        Action bar and menu icons
+        81 × 81	.png	For devices with a screen resolution of 720 x 720px or 768 x 1280px
+        67 × 67	.png	For devices with a screen resolution of 720 x 1280px
+        -------------------------------------------------------------------------------
+        Components and small buttons
+        71 × 71	.png	For devices with a screen resolution of 720 x 720px or 768 x 1280px
+        59 × 59	.png	For devices with a screen resolution of 720 x 1280px
+        ---------------
+        Indicators
+        46 × 36
+        31 × 26	.png	For devices with a screen resolution of 720 x 720px or 768 x 1280px
+        38 × 30
+        26 × 22	.png	For devices with a screen resolution of 720 x 1280px-->
         <button id="doFavicon" class="topcoat-button--large hostFontSize">Create Favicons Icons</button><br><br>
         <!-- Favicons (All Platforms)
         16px 24px 32px 57px(ios) 72px(ios pad) 114px(ios Retina)
         96px(Google TV) 128px(Chrome Web Store) 160px(Opera Speed Dial)-->
+        <button id="doFolioIndesign" class="topcoat-button--large hostFontSize">Create Digital Suite publishing Icons</button><br>
+        <a href="http://frischmilch.github.io/DPS-App-Icons-Template/">Guidelines</a><br>
+        <!-- Digital Suite publishing <a href="http://frischmilch.github.io/DPS-App-Icons-Template/"></a>
+        original_29x29 original_50x50 original_57x57 original_58x58 original_72x72 original_76x76 original_100x100 original_114x114
+        original_144x144 original_152x152 original_512x512 original_1024x1024-->
         <button id="doGoogleChrome" class="topcoat-button--large hostFontSize">Create Google Chrome Icons</button><br><br>
-        <!-- Google Chrome -->
+        <!-- Google Chrome
+        Chrome extension icon
+        16 × 16 icon16.png,
+        48 × 48 icon48.png
+        128 × 128	icon128.png
+        -->
         <button id="doGoogleTV" class="topcoat-button--large hostFontSize">Create Google TV Icons</button><br><br>
-        <!-- Google TV -->
+        <!-- Google TV
+        GoogleTV favicon Guidelines 96 × 96	favicon.png
+        -->
         <button id="doIOS6" class="topcoat-button--large hostFontSize">Create IOS 6 Icons</button><br><br>
-        <!-- iOS 6 -->
+        <!-- iOS 6
+        Application Icons
+        57px - 10px ∅
+        72px - 12px ∅ (iPad)
+        114px - 20px ∅ (iPhone 4+)
+        144px - 24px ∅ (iPad 3+)	.png
+        Name icon for Retina display with a suffix of @2x.png	Do not include the corner radius in the artwork,
+        and be aware that this portion is cropped
+        Web clip icons
+        57px - 10px ∅
+        72px - 12px ∅ (iPad)
+        114px - 20px ∅ (iPhone 4+)
+        144px - 24px ∅ (iPad 3+)	apple-touch-icon-precomposed.png
+        apple-touch-icon-72x72-precomposed.png
+        apple-touch-icon-114x114-precomposed.png
+        apple-touch-icon-144x144-precomposed.png	These are shown on the home screen
+        when saving a bookmark. Leave off the '-precomposed' portion of the filename
+        if you want iOS to add the glossy overlay.
+        See chapter 3 of the Icon Handbook for more information
+        Document icons
+        22x29px
+        44x58px (iPhone 4+)
+        64px (iPad 1-2)
+        128px (iPad 3+)	.png	These icons are overlaid on top of the standard document icon
+        (white sheet of paper), hence the odd sizes. The iPad has a safe area of 44x59px.
+        Settings icon
+        29px - 5px ∅
+        58px - 10px ∅ (Retina Display)	.png	iPad 1-2 sizes are the same as
+        for non-Retina displays, although the final visual size of this icon is
+        48x48px as iOS trims 1px from each side of the artwork and adds a drop shadow.
+        Spotlight Search Results icon
+        29px - 5px ∅
+        50px - 10px ∅ (iPad 1-2)
+        58px - 10px ∅ (iPhone 4+)
+        100px - 20px ∅ (iPad 3+)	.png	iPad 1-2 sizes are the same as for
+        non-Retina displays, although the final visual size of this icon is
+        48x48px as iOS trims 1px from each side of the artwork and adds a drop shadow.
+        Toolbar and navigation bar icons
+        20px
+        40px (Retina Display)	.png	iOS will use the alpha channel,
+        applying shadow effects for you, so don't include any shadow in your artwork
+        Tab bar icon
+        30px
+        60px (Retina Display)	.png
+        App Store icon
+        512px/90px ∅
+        1024px/180px ∅ (Retina Display)	Must be named  'iTunesArtwork' without the .png extension
+        	The App Store icon is reduced to 176px square for the app's listing. iPad will use a
+          scaled version of this icon for custom document icon, if one hasn't been provided.
+          -->
         <button id="doIOS7" class="topcoat-button--large hostFontSize">Create IOS 7 Icons</button><br><br>
-        <!-- iOS 7 -->
+        <!-- iOS 7
+        Application and WebClip Icons
+        76 × 76 (iPad non-retina e.g iPad2)
+        120 × 120 (iPhone @2x)
+        152 × 152 (iPad 3+ @2x)	.png
+        Gloss overlay is no longer added to web-clip icon, so '-precomposed'
+        suffix is no longer required.	Corner radius is 27px at 120px, but don't include
+        this in the artwork, just aware that this portion is cropped.
+        Settings icon
+        {"name": "Icon-29",          "size":29},
+        {"name": "Icon-29@2x",       "size":58},
+        {"name": "Icon-29@3x",       "size":87},
+        29 × 29
+        58 × 58 (@2x)	.png	iPad 1-2 sizes are the same as for non-Retina
+        displays, although the final visual size of this icon is 48x48px as
+        iOS trims 1px from each side of the artwork and adds a drop shadow.
+        Spotlight Search Results icon
+        {"name": "Icon-40",          "size":40},
+        {"name": "Icon-40@2x",       "size":80},
+        {"name": "Icon-40@3x",       "size":120},
+        40 × 40
+        80 × 80 (@2x)	.png	iPad 1-2 sizes are the same as for non-Retina
+        displays, although the final visual size of this icon is 48x48px as
+        iOS trims 1px from each side of the artwork and adds a drop shadow.
+        Toolbar and navigation bar icons
+        {"name": "Icon-50",          "size":50},
+        {"name": "Icon-50@2x",       "size":100},
+        22 × 22
+        44 × 44 (@2x)	.png	iOS will use the alpha channel, applying
+        shadow effects for you, so don't include any shadow in your artwork
+        Tab bar icon
+        {"name": "Icon-57",          "size":57},
+        {"name": "Icon-57@2x",       "size":114},
+        25 × 25
+        50 × 50 (@2x)	.png	Size can vary but 96 × 64 is the maximum
+        Newsstand Cover
+        At least 1024 longest edge	.png
+        App Store icon
+        512 × 512
+        1024 × 1024 (@2x)	Must be named  'iTunesArtwork' without the .png extension
+        The App Store icon is reduced to 176px square for the app's listing. iPad will
+        use a scaled version of this icon for custom document icon, if one hasn't been provided.
+        {"name": "iTunesArtwork@2x", "size":1024},
+        {"name": "iTunesArtwork",    "size":512},
+        {"name": "Icon-60@2x",       "size":120},
+        {"name": "Icon-60@3x",       "size":180},
+        {"name": "Icon-72",          "size":72},
+        {"name": "Icon-72@2x",       "size":144},
+        {"name": "Icon-76",          "size":76},
+        {"name": "Icon-76@2x",       "size":152},
+        {"name": "Icon-120",         "size":120}
+        -->
         <button id="doMacOSX" class="topcoat-button--large hostFontSize">Create Mac OS X Icons</button><br><br>
-        <!-- Mac OS X -->
+        <!-- Mac OS X
+        Application & Document Icons
+        16px
+        32px
+        128px
+        256px (OS X 10.5+)
+        512px (OS X 10.5+)
+        1024px (OS X 10.7+)	applicationname.icns	Examples of how the icon r
+        esources are used: 16px - list views, spotlight searches
+        32px - Finder
+        128px - Dock, Finder previews
+        256px - Finder preview
+        512px - CoverFlow
+        See chapter 7 of the Icon Handbook for more information
+        Menu bar icon
+        Max 22px height x any width	.png,.tiff or .pdf	The convention is for greyscale o
+        nly  use colour sparingly for attention/notification states
+        Sidebar icon
+        16px (small)
+        18px (medium)
+        32px (large)	.pdf	From OS X 10.7+ the convention is for greyscale icons,
+        with face-on perspective. The OS will ignore any colour you add and only use the alpha values
+        Toolbar icon (buttons)
+        32px (default)
+        24px (small size)	.icns, .pdf, multipage .tiff or .png	The small size is
+        shown when the option is chosen via Customize Toolbar
+        Toolbar icon (streamlined)
+        19px	.pdf	These are used in monochrome toolbars where the icon is centred
+        within a button (such as Mail and Safari). These have only one size
+        Safari extension icon
+        16px (for the toolbar)
+        32px
+        48px-->
         <button id="doWindows" class="topcoat-button--large hostFontSize">Create Windows Icons</button><br><br>
-        <!-- Windows -->
+        <!-- Windows
+        Application, document and control panel icons
+        16p × 16
+        24 × 24*
+        32 × 32
+        48 × 48
+        64 × 64*
+        128 × 128
+        256 × 256 (Windows Vista+)
+        * Required for classic mode
+        .ico	Microsoft recommends including 8-bit and 4-bit images
+        for each resource. The style of XP icons is more saturated in Vista onwards.
+        See chapter 7 of The Icon Handbook for more information."
+        Toolbar icons
+        16 × 16
+        24 × 24
+        32 × 32	.ico, .png	These should always be face-on perspective, even at 32px
+        Dialog and wizard icons
+        32 × 32
+        48 × 48	.ico, .png
+        Quick launch area
+        40 × 40
+        48 × 48	.ico, .png	As the 48px resource will be scaled down for the Alt+Tab
+        overlay, it's recommended to add a 40px resource for crispness
+        Balloon icons
+        32 × 32
+        40 × 40-->
         <button id="doWindowsPhone" class="topcoat-button--large hostFontSize">Create Windows Phone Icons</button><br><br>
-        <!-- Windows Phone -->
+        <!-- Windows Phone
+        Application Icons
+        99 × 99 (14px )
+        .png	Start tiles are a key part of the Windows Phone UI. As well as the icon, the tile will contain other information from the application such as number of unread emails
+        Tile Icons
+        110 × 110 (19px) - Small Tile
+        202 × 202 (34px) - Medium Tile
+        159 × 159 (43px) - Small Flip/Cycle Tile
+        336 × 336 (101px) - Medium Flip/Cycle Tile
+        691 × 336 (279×101px) - Large Flip/Cycle Tile
+        Application bar icons
+        48 × 48	.png	These icons should be rendered in white only and be kept within a
+        safe area of 26px. Don't include the circle bordering the icon as this is provided
+        by the OS, which will also re-colour it to work when the light theme is enabled
+        Lock icon
+        38 × 38	.png
+        Lens icon
+        173 × 173 (WVGA)
+        259 × 259 (720p)
+        277 × 277 (WXGA)	.png
+        File Handler icons
+        33 × 33 (Small)
+        69 × 69 (Medium)
+        179 × 179 (Large)
+        -->
         <div id="accordion">
           <h3>Section 1</h3>
           <div>
@@ -83,70 +330,8 @@
             </p>
           </div>
         </div>
-
-<!--
-
-      {"name": "iTunesArtwork@2x", "size":1024},
-      {"name": "iTunesArtwork",    "size":512},
-
-      {"name": "Icon-29",          "size":29},
-      {"name": "Icon-29@2x",       "size":58},
-      {"name": "Icon-29@3x",       "size":87},
-
-      {"name": "Icon-40",          "size":40},
-      {"name": "Icon-40@2x",       "size":80},
-      {"name": "Icon-40@3x",       "size":120},
-
-      {"name": "Icon-50",          "size":50},
-      {"name": "Icon-50@2x",       "size":100},
-
-      {"name": "Icon-57",          "size":57},
-      {"name": "Icon-57@2x",       "size":114},
-
-      {"name": "Icon-60@2x",       "size":120},
-      {"name": "Icon-60@3x",       "size":180},
-
-      {"name": "Icon-72",          "size":72},
-      {"name": "Icon-72@2x",       "size":144},
-
-      {"name": "Icon-76",          "size":76},
-      {"name": "Icon-76@2x",       "size":152},
-
-      {"name": "Icon-120",         "size":120}
-      BASE:
-appSto_ic_1024x1024.png
-appSto_ic_512x512.png
-appSto_ic_152x152.png
-appSto_ic_144x144.png
-appSto_ic_120x120.png
-appSto_ic_114x114.png
-appSto_ic_100x100.png
-appSto_ic_80x80.png
-appSto_ic_76x76.png
-appSto_ic_60x60.png
-appSto_ic_58x58.png
-appSto_ic_57x57.png
-appSto_ic_50x50.png
-appSto_ic_40x40.png
-appSto_ic_29x29.png
-
-gooPlay_ic_512x512.png
-gooPlay_ic_96x96.png
-gooPlay_ic_72x72.png
-gooPlay_ic_48x48.png
-gooPlay_ic_36x36.png
-
-mkPlace_ic_200x200.png
-mkPlace_ic_173x173.png
-mkPlace_ic_99x99.png
-mkPlace_ic_62x62.png
-
-adExch_ic_60x60.png
-
- -->
-
     </div>
-    <script src="js/libs/jquery-ui.min.js"></script>
+
     <script src="js/libs/CSInterface.js"></script>
     <script src="js/libs/jquery-2.0.2.min.js"></script>
 

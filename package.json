@@ -1,0 +1,24 @@
+{
+  "name": "icon-me",
+  "version": "1.0.0",
+  "description": "create icon from photoshop",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manolenso/icon-me.git"
+  },
+  "author": "Laurent rémy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/manolenso/icon-me/issues"
+  },
+  "homepage": "https://github.com/manolenso/icon-me",
+  "dependencies": {
+    "fs": "0.0.2",
+    "http": "0.0.0",
+    "path": "^0.4.9"
+  }
+}
